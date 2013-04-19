@@ -1,0 +1,85 @@
+<h1>Characters</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+        <th>Name</th>
+        <th>Career</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Alignment</th>
+        <th>Str</th>
+        <th>Ref</th>
+        <th>Int</th>
+        <th>Con</th>
+        <th>Wil</th>
+        <th>Dex</th>
+        <th>Ath</th>
+        <th>Spd</th>
+        <th>Initiative</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="character in characters">
+      <td>
+        <a href="/characters/{{character.id}}">
+          {{character.name}}
+        </a>
+      </td>
+        <td>
+          {{character.career}}
+        </td>
+        <td>
+          {{character.age}}
+        </td>
+        <td>
+          {{character.gender}}
+        </td>
+        <td>
+          {{character.alignment}}
+        </td>
+        <td>
+          {{character.str}}
+        </td>
+        <td>
+          {{character.ref}}
+        </td>
+        <td>
+          {{character.int}}
+        </td>
+        <td>
+          {{character.con}}
+        </td>
+        <td>
+          {{character.wil}}
+        </td>
+        <td>
+          {{character.dex}}
+        </td>
+        <td>
+          {{character.ath}}
+        </td>
+        <td>
+          {{character.spd}}
+        </td>
+        <td>
+          {{character.initiative}}
+        </td>
+      <td>
+        <a href="/characters/{{character.id}}/edit"
+          class="btn btn-primary"><i class="icon-edit"></i>
+          Edit
+        </a>
+        <button ng-click="destroy()" class="btn btn-danger">
+          <i class="icon-trash"></i> Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  <a href='/characters/new' class="btn btn-primary">
+    <i class="icon-plus"></i>New
+  </a>
+</p>

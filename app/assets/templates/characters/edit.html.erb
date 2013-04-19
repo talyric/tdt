@@ -1,0 +1,246 @@
+<form name="editCharacter">
+  <fieldset>
+    <legend>
+      Edit Character
+    </legend>
+      <div class="control-group">
+        <label class="control-label">
+          Name
+        </label>
+        <div class="controls">
+            <input type="text"
+                   name="character[name]"
+                   ng-model="character.name"
+                   class="text_field"
+                   required>
+          <span ng-show="editCharacter.name.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">
+          Career
+        </label>
+        <div class="controls">
+            <input type="text"
+                   name="character[career]"
+                   ng-model="character.career"
+                   class="text_field"
+                   required>
+          <span ng-show="editCharacter.career.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">
+          Age
+        </label>
+        <div class="controls">
+            <input type="number"
+                   name="character[age]"
+                   ng-model="character.age"
+                   class="number_field"
+                   required>
+          <span ng-show="editCharacter.age.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">
+          Gender
+        </label>
+        <div class="controls">
+            <input type="text"
+                   name="character[gender]"
+                   ng-model="character.gender"
+                   class="text_field"
+                   required>
+          <span ng-show="editCharacter.gender.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">
+          Alignment
+        </label>
+        <div class="controls">
+            <input type="text"
+                   name="character[alignment]"
+                   ng-model="character.alignment"
+                   class="text_field"
+                   required>
+          <span ng-show="editCharacter.alignment.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">
+          Str
+        </label>
+        <div class="controls">
+            <input type="number"
+                   name="character[str]"
+                   ng-model="character.str"
+                   class="number_field"
+                   required>
+          <span ng-show="editCharacter.str.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">
+          Ref
+        </label>
+        <div class="controls">
+            <input type="number"
+                   name="character[ref]"
+                   ng-model="character.ref"
+                   class="number_field"
+                   required>
+          <span ng-show="editCharacter.ref.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">
+          Int
+        </label>
+        <div class="controls">
+            <input type="number"
+                   name="character[int]"
+                   ng-model="character.int"
+                   class="number_field"
+                   required>
+          <span ng-show="editCharacter.int.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">
+          Con
+        </label>
+        <div class="controls">
+            <input type="number"
+                   name="character[con]"
+                   ng-model="character.con"
+                   class="number_field"
+                   required>
+          <span ng-show="editCharacter.con.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">
+          Wil
+        </label>
+        <div class="controls">
+            <input type="number"
+                   name="character[wil]"
+                   ng-model="character.wil"
+                   class="number_field"
+                   required>
+          <span ng-show="editCharacter.wil.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">
+          Dex
+        </label>
+        <div class="controls">
+            <input type="number"
+                   name="character[dex]"
+                   ng-model="character.dex"
+                   class="number_field"
+                   required>
+          <span ng-show="editCharacter.dex.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">
+          Ath
+        </label>
+        <div class="controls">
+            <input type="number"
+                   name="character[ath]"
+                   ng-model="character.ath"
+                   class="number_field"
+                   required>
+          <span ng-show="editCharacter.ath.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">
+          Spd
+        </label>
+        <div class="controls">
+            <input type="number"
+                   name="character[spd]"
+                   ng-model="character.spd"
+                   class="number_field"
+                   required>
+          <span ng-show="editCharacter.spd.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">
+          Initiative
+        </label>
+        <div class="controls">
+            <input type="number"
+                   name="character[initiative]"
+                   ng-model="character.initiative"
+                   class="number_field"
+                   required>
+          <span ng-show="editCharacter.initiative.$error.required"
+                class="help-inline">
+            Required
+          </span>
+        </div>
+      </div>
+    <div class="form-actions">
+      <button class="btn btn-success" ng-click="save()"
+        ng-disabled="isClean() || editCharacter.$invalid">
+        Save
+      </button>
+      <button ng-click="destroy()"
+              ng-show="character.id"
+              class="btn btn-danger">
+              <i class="icon-trash"></i>Delete
+      </button>
+      <a href="/characters" class="btn">
+        Back to characters
+      </a>
+    </div>
+  </fieldset>
+</form>
+

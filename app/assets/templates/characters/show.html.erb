@@ -1,0 +1,85 @@
+<h1>Character</h1>
+
+<p>
+  <b>Name</b><br>
+  {{character.name}}
+</p>
+
+<p>
+  <b>Career</b><br>
+  {{character.career}}
+</p>
+
+<p>
+  <b>Age</b><br>
+  {{character.age}}
+</p>
+
+<p>
+  <b>Gender</b><br>
+  {{character.gender}}
+</p>
+
+<p>
+  <b>Alignment</b><br>
+  {{character.alignment}}
+</p>
+
+<p>
+  <b>Str</b><br>
+  {{character.str}}
+</p>
+
+<p>
+  <b>Ref</b><br>
+  {{character.ref}}
+</p>
+
+<p>
+  <b>Int</b><br>
+  {{character.int}}
+</p>
+
+<p>
+  <b>Con</b><br>
+  {{character.con}}
+</p>
+
+<p>
+  <b>Wil</b><br>
+  {{character.wil}}
+</p>
+
+<p>
+  <b>Dex</b><br>
+  {{character.dex}}
+</p>
+
+<p>
+  <b>Ath</b><br>
+  {{character.ath}}
+</p>
+
+<p>
+  <b>Spd</b><br>
+  {{character.spd}}
+</p>
+
+<p>
+  <b>Initiative</b><br>
+  {{character.initiative}}
+</p>
+
+<div class="form-actions">
+  <a href="/characters/{{character.id}}/edit"
+    class="btn btn-primary"><i class="icon-edit"></i>
+    Edit Character
+  </a>
+  <button ng-click="destroy()" class="btn btn-danger">
+    <i class="icon-trash"></i> Delete
+  </button>
+  <a href="/characters" class="btn">
+    Back to characters
+  </a>
+</div>
+

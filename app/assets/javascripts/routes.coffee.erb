@@ -1,0 +1,27 @@
+root = global ? window
+angular = root.angular
+
+thisApp = angular.module("TdtClient", ['ngCookies', 'characters']).config(['$routeProvider', '$locationProvider' , 
+($routeProvider, $locationProvider) ->
+  #$locationProvider.hashPrefix('');
+  $locationProvider.html5Mode true
+  $routeProvider.when("/",
+    controller: "WelcomeCtrl"
+    templateUrl: "<%= asset_path('welcome/index.html') %>"
+  ).when("/characters", 
+    controller: CharactersIndexCtrl
+    templateUrl: '<%= asset_path("characters/index.html") %>'
+  ).when("/characters/new",
+    controller: CharactersCreateCtrl
+    templateUrl: '<%= asset_path("characters/new.html") %>'
+  ).when("/characters/:id",
+    controller: CharactersShowCtrl
+    templateUrl: '<%= asset_path("characters/show.html") %>'
+  ).when("/characters/:id/edit",
+    controller: CharactersEditCtrl
+    templateUrl: '<%= asset_path("characters/edit.html") %>'
+  ).otherwise redirectTo: "/"
+])
+
+root.thisApp = thisApp
+
