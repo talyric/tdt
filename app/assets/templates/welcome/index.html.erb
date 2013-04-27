@@ -1,6 +1,29 @@
-<div class="hero-unit center">
-  <p><h1>AngularJS, CoffeeScript and Rails!</h1></p>
-  <p>
-    <img src="/assets/AngularJS-medium.png">
-  </p>
-</div>
+<ul class="nav nav-pills nav-stacked">
+  <li ng-repeat="character in characters" class="active">
+    <a href="/characters/{{character.id}}">{{character.name}}</a>
+  </li>
+</ul>
+
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="character in characters">
+    <td>
+      <a href="/characters/{{character.id}}">
+        {{character.name}}
+      </a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<p>
+  <a href='/characters/new' class="btn btn-primary">
+    <i class="icon-plus"></i>New
+  </a>
+</p>
