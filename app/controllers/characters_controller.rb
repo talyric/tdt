@@ -15,7 +15,7 @@ respond_to :json
   # GET /characters/1.json
   def show
     @character = Character.find(params[:id])
-
+    #session[:character_id] = @character.id
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @character }
